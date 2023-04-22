@@ -6,64 +6,7 @@ body {
 	margin: 0;
 }
 
-.container {
-	width: 570px;
-	margin: 0 auto;
-}
-
-.bold-text {
-	font-weight: 900;
-	display: block;
-}
-
-h1 .bold-text {
-	font-size: 80px;
-}
-
-h2 .bold-text {
-	font-size: 60px;
-}
-
-h1,
-h2 {
-	font-weight: 300;
-}
-
-h1 {
-	font-size: 60px;
-	margin-top: 0;
-}
-
-h2 {
-	font-size: 42px;
-	margin-top: 0;
-}
-
-h3 {
-	font-size: 36px;
-	font-weight: 900;
-	margin-bottom: 0;
-}
-
-p {
-	margin-bottom: 0;
-}
-
-a {
-	color: #99d930;
-	font-weight: 900;
-}
-
-a:hover,
-a:focus {
-	color: #131313;
-}
-
-.small-text {
-	font-size: 16px;
-	margin-top: 0;
-}
-
+/* layout */
 header,
 section {
 	padding: 100px 0;
@@ -72,4 +15,96 @@ section {
 .inverse {
 	color: #fff;
 	background: #252525;
+}
+
+.container {
+	width: 570px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+.small-text {
+	margin-top: 0;
+}
+
+h3,
+p {
+	margin-bottom: 0;
+}
+
+/* typography */
+h1,
+h2 {
+	font-weight: 300;
+}
+
+h1,
+h2 .bold-text {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 42px;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+.bold-text {
+	display: block;
+}
+
+h1 .bold-text {
+	font-size: 80px;
+}
+
+.small-text {
+	font-size: 16px;
+}
+
+.bold-text,
+.name,
+time,
+a {
+	color: #99d930;
+}
+
+h3,
+.bold-text,
+a {
+	font-weight: 900;
+}
+
+/* link */
+a:hover,
+a:focus {
+	color: #131313;
+}
+
+/* button */
+.btn {
+	text-decoration: none;
+	background: #99d930;
+	color: #252525;
+	padding: 10px 25px;
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.about-me .btn:hover,
+.about-me .btn:focus {
+	background: #252525;
+	color: #fff;
+}
+
+.articles .btn:hover,
+.articles .btn:focus {
+	background: #fff;
+	color: #252525;
 }
